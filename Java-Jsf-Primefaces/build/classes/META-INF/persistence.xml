@@ -12,12 +12,12 @@
 
 			<!-- Conexão com o banco de dados -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/db_java_jsf_primefaces_contato?serverTimezone=UTC	" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://LocalHost:3306/db_java_jsf_primefaces_contato?serverTimezone=UTC" />
 			<property name="hibernate.connection.user" value="root" />
 			<property name="hibernate.connection.password" value="root" />
 			<property name="hibernate.hbm2ddl.auto" value="create" />
-			<property name="hibernate.hbm2ddl.auto" value="update" />
+			
 
 			<!--Configuracoes de Debug -->
 			<property name="hibernate.show_sql" value="true" />
