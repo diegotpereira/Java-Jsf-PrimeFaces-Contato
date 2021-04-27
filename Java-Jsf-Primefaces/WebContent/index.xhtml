@@ -29,12 +29,28 @@
             <p:splitButton value="salvar" action="#{pessoaMB.salvar}"
                type="button" update="panelgrid" icon="ui-icon-disk">
             </p:splitButton>
+            
+              <!--  Grid de consulta -->
+	       <p:dataTable var="c" value="#{pessoaMB.list}">
+	       
+		         <p:column headerText="Id">
+		             <h:outputText value="#{c.id}" />
+		         </p:column>
+		         
+		         <p:column headerText="Nome">
+		             <h:outputText value="#{c.nome}" />
+		         </p:column>
+		         
+		          <p:column headerText="Email">
+		             <h:outputText value="#{c.email}" />
+		         </p:column>
+		         
+		          <p:column headerText="Telefone">
+		             <h:outputText value="#{c.telefone}" />
+		         </p:column>
+	         
+	       </p:dataTable>
        </h:panelGrid>
-       
-       <!--  Grid de consulta -->
-       <p:dataTable var="c" value="#{pessoaMB.list}">
-         <p:column></p:column>
-       </p:dataTable>
    </h:form>
 </h:body>
 </html>
