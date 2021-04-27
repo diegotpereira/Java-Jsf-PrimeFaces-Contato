@@ -15,6 +15,7 @@ public class PessoaDao {
 	public PessoaDao() {
 		emf = Persistence.createEntityManagerFactory("conexao");
 		em = emf.createEntityManager();
+	
 	}
 	public void salvar(Pessoa pessoa) {
 		em.getTransaction().begin();

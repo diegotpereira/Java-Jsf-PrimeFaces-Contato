@@ -2,7 +2,7 @@ package br.com.java.model;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name="Pessoa")
 public class Pessoa {
 	
 	@Id
